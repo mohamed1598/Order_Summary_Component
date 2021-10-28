@@ -1,0 +1,109 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+}
+p{
+    
+    font-size: 16px;
+}
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("../images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+}
+.orderCard{
+    background-color: white;
+    width: 25%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 5%;
+    padding-bottom: 5px;
+}
+@media(max-width:1330px){
+    .orderCard{
+        width: 35%;
+    }
+}
+@media(max-width:1000px){
+    .orderCard{
+        width: 50%;
+    }
+}
+@media(max-width:600px){
+    .orderCard{
+        width: 90%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+    body{
+        background-image: url("../images/pattern-background-mobile.svg");
+    }
+}
+
+.orderCard img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.orderCard h1{
+    text-align: center;
+    font-size: 30px;
+}
+.orderCard p{
+    text-align: center;
+    color: #C5C8CF;
+}
+article{
+    padding: 5% 0%;
+    margin: 0 8% 8% 8%;
+    background-color: #F8F9FE;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+}
+article .left{
+    /* float: left; */
+    width: 15%;
+    margin: 0 5%;
+}
+article .left img{
+    width: 100%;
+}
+article .center {
+    margin: 0 5%;
+}
+article .center h2{
+    margin: 0%;
+}
+article .center p{
+    margin: 5%;
+}
+
+article .right{
+    /* float: right; */
+    padding:auto;
+    margin: 0 5%;
+}
+article .right a{
+    color: hsl(245, 75%, 52%);
+    display: block;
+    font-weight: bolder;
+    margin-top: 25%;
+}
+.btn{
+    width: 80%;
+    display: block;
+    margin:10px auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    border:0px;
+    color: #AFB7C4;
+    background-color: inherit;
+    cursor: pointer;
+}
+.btn-blue{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.64);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.64);
+}
